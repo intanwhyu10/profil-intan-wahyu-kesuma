@@ -51,9 +51,9 @@ section {
 
 section img.image {
     max-width: 50%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    height: 50;
+    border-radius: 5px;
+    margin-bottom: 8px;
 }
 
 footer {
