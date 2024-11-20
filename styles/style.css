@@ -1,69 +1,106 @@
+/* Reset dasar */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
 }
 
-.container {
-    display: flex;
+header h1 {
+    margin: 0;
 }
 
-.sidebar {
-    width: 25%;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.sidebar h3 {
-    color: #333;
-}
-
-.sidebar ul {
-    list-style-type: none;
+nav ul {
+    list-style: none;
     padding: 0;
+    margin: 1rem 0 0;
+    display: inline-block;
 }
 
-.sidebar ul li {
-    margin: 10px 0;
+nav ul li {
+    display: inline;
+    margin-right: 10px;
 }
 
-.sidebar ul li a {
+nav ul li a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #fff;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Main Section */
 main {
-    width: 75%;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
-section img.image {
-    width: 25%;
-    height: auto;
+/* Article Section */
+article {
+    flex: 2;
+    background: #fff;
+    padding: 1rem;
     border-radius: 5px;
-    margin-bottom: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+article h2 {
+    color: #333;
+    margin-bottom: 1rem;
 }
-img{
-    width: 50%;
-    height: 50%;
+
+/* Aside Section */
+aside {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+aside h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-top: 1rem;
+    }
 }
